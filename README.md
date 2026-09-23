@@ -28,23 +28,7 @@
 | 🔄 **跨存储工作流** | 支持跨 Doris / PostgreSQL / Elasticsearch 的长期复合任务与资源级联清理 |
 | 📊 **完整可观测性** | 请求跟踪、统一错误响应、后台任务状态查询、查询经验沉淀 |
 
-## 🧩 模块文档
-
-详细的架构设计与各模块实现文档位于 [`docs/`](docs/) 目录：
-
-| 模块 | 文档 | 说明 |
-| --- | --- | --- |
-| 架构总览 | [00. 架构与协作总览](docs/00_ARCHITECTURE_OVERVIEW.md) | 系统总体架构、数据流向与多 Agent 协作机制 |
-| Shared | [01. Shared 基础能力](docs/01_SHARED.md) | 数据库与外部服务连接、公共数据格式、错误响应、请求跟踪与后台任务 |
-| Identity | [02. Identity 认证与授权](docs/02_IDENTITY.md) | 用户认证、Token 管理、Doris 账号与查询权限控制（列级与行级） |
-| Metadata | [03. Metadata 元数据与语义召回](docs/03_METADATA.md) | 表/字段/指标元数据管理、Elasticsearch 语义与取值索引 |
-| Sandbox | [04. Sandbox 隔离工作区](docs/04_SANDBOX.md) | Docker 容器隔离执行环境、文件权限与多进程沙箱协调 |
-| Query | [05. Query 安全查询链路](docs/05_QUERY.md) | 只读 SQL 校验与安全执行、结果导出 CSV 及查询经验沉淀 |
-| Assistant | [06. Assistant 多 Agent 分析体系](docs/06_ASSISTANT.md) | Planner / Explorer / Analyst / Reviewer 调度、会话管理与流式推送 |
-| Workflows | [07. Workflows 跨存储工作流](docs/07_WORKFLOWS.md) | 跨多存储与环境的长期复合任务（用户注销与资源级联清理） |
-
 ---
-
 ## 🚀 快速开始
 
 ### 环境要求
